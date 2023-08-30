@@ -1,3 +1,4 @@
+#Script made by Liamjoh
 ﻿#Settings for mailout function
 
 $clientID = "YOUR_CLIENT_ID"
