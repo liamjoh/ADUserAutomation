@@ -189,11 +189,11 @@ do {
 
 Write-Host "Manager found!: $($Manager.Name)" -ForegroundColor Green
 
-#Plockar UPN suffix från $UserMail
+#Getting UPNSuffix from manager mail
 $upnSuffix = $UserMail.Substring($UserMail.IndexOf("@"))
 
 
-#DO Loop för licenstilldelning
+#DO Loop for licensing
 
 Do {
     $licenses = Read-Host "Should the user have M365 E-Licenses? (Y / N)"
@@ -218,7 +218,7 @@ do{
 Start-Sleep -Seconds 1
 
 
-#DO loop som tvingar ExternalID att anges med 6 siffror.
+#DO loop Forcing externalID to 6 numbers
 do{
     try{
         $ExID = 0
