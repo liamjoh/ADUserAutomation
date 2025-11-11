@@ -1,5 +1,6 @@
 ﻿#Script to create a new user.
 #Created by liamjoh
+#Module imports if needed
 Import-Module -Name PnP.PowerShell
 Import-Module ActiveDirectory
 
@@ -413,3 +414,4 @@ Invoke-RestMethod -Uri $apiEndpoint -Method POST -Headers $headers -Body $jsonPa
 Write-Host "`n`n Email has been sent to $UserMail, Password has been sent to $UserMobile via text message."
 Write-Host "`n`n Press a button to end script"
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
